@@ -1,0 +1,26 @@
+{
+    "name": "tom/ice-scraper",
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "authors": [
+        {
+            "name": "Tom Myers",
+            "email": "tmyers273@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/dom-crawler": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "tmyers273\\IceScraper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "examples\\": "examples/"
+        }
+    }
+}
