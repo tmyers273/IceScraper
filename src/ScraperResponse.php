@@ -3,8 +3,10 @@
 namespace tmyers273\IceScraper;
 
 use Symfony\Component\DomCrawler\Crawler;
+use tmyers273\IceScraper\Contracts\ScraperResponse as ScraperResponseContract;
 
-class ScraperResponse {
+class ScraperResponse implements ScraperResponseContract
+{
 
     protected $source;
     protected $crawler;
