@@ -2,12 +2,13 @@
 
 namespace examples\google;
 
+use tmyers273\IceScraper\Contracts\LoaderFactory;
 use tmyers273\IceScraper\ItemLoader;
 use tmyers273\IceScraper\ScraperResponse;
 
-class GoogleResultsPageLoaderFactory {
+class GoogleResultsPageLoaderFactory implements LoaderFactory {
 
-    public function make($source)
+    public function make($source) : ItemLoader
     {
         $loader = new ItemLoader(new GoogleResultPage(), $source);
 
